@@ -87,6 +87,19 @@
             color: #2b1a12;
         }
 
+        .text-label-nowrap {
+            white-space: nowrap;
+            overflow: visible;
+        }
+
+        .text-label-center {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2b1a12;
+            justify-content: center;
+            text-align: center;
+        }
+
         .text-label-sm {
             font-size: 12px;
             font-weight: 400;
@@ -95,6 +108,37 @@
             align-items: flex-start;
             flex-direction: column;
             justify-content: center;
+        }
+
+        .text-stsl-brand {
+            font-size: 12px;
+            font-weight: 400;
+            color: #5a3828;
+            line-height: 1.2;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text-persuasion {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .text-persuasion .persuasion-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2b1a12;
+        }
+
+        .text-persuasion .persuasion-sub {
+            font-size: 12px;
+            font-weight: 400;
+            color: #5a3828;
         }
 
         .text-msg {
@@ -172,12 +216,12 @@
                 Способность повлиять на продажи
             </div>
 
-            <div class="el text text-label-sm" style="left:25.8px;top:70.1px;width:255.5px;height:65.4px;">
+            <div class="el text text-stsl-brand" style="left:25.8px;top:70.1px;width:255.5px;height:65.4px;">
                 <span style="font-size:24px;font-weight:700;color:#5a2314;">STSL</span>
                 <span>(Краткосрочный эффект на бренд и продажи)</span>
             </div>
 
-            <div class="el text text-label-sm" style="left:27.8px;top:200.6px;width:253.5px;height:65.4px;">
+            <div class="el text text-stsl-brand" style="left:27.8px;top:200.6px;width:253.5px;height:65.4px;">
                 <span style="font-size:24px;font-weight:700;color:#5a2314;">Brand Power</span>
                 <span>(Долгосрочный эффект на бренд и продажи)</span>
             </div>
@@ -186,27 +230,28 @@
                 Запоминаемость с брендом
             </div>
 
-            <div class="el text text-label-sm" style="left:684px;top:82.6px;width:245.9px;height:43.6px;">
-                Persuasion (Повышает вероятность посещения или заказа)
+            <div class="el text text-persuasion" style="left:684px;top:82.6px;width:245.9px;height:43.6px;">
+                <span class="persuasion-title">Persuasion</span>
+                <span class="persuasion-sub">(Повышает вероятность посещения или заказа)</span>
             </div>
 
-            <div class="el text text-label" style="left:354.8px;top:127.6px;width:172.8px;height:26.7px;">
+            <div class="el text text-label text-label-nowrap" style="left:354.8px;top:127.6px;width:172.8px;height:26.7px;">
                 Involvement (Вовлекает)
             </div>
-            <div class="el text text-label" style="left:354.8px;top:148.2px;width:153.8px;height:26.7px;">
+            <div class="el text text-label text-label-nowrap" style="left:354.8px;top:148.2px;width:153.8px;height:26.7px;">
                 Enjoyment (Нравится)
             </div>
-            <div class="el text text-label" style="left:354.8px;top:168.8px;width:210.7px;height:26.7px;">
+            <div class="el text text-label text-label-nowrap" style="left:354.8px;top:168.8px;width:210.7px;height:26.7px;">
                 Branding (Бренд запоминается)
             </div>
 
-            <div class="el text text-label-sm" style="left:344.9px;top:207.8px;width:198px;height:50.9px;">
+            <div class="el text text-label-center" style="left:344.9px;top:207.8px;width:198px;height:50.9px;">
                 Запоминаемость с брендом
             </div>
-            <div class="el text text-label-sm" style="left:555.1px;top:198.7px;width:175.1px;height:72.7px;">
+            <div class="el text text-label-center" style="left:555.1px;top:198.7px;width:175.1px;height:72.7px;">
                 Степень удовлетворения потребностей
             </div>
-            <div class="el text text-label-sm" style="left:756.8px;top:198.7px;width:172.8px;height:72.7px;">
+            <div class="el text text-label-center" style="left:756.8px;top:198.7px;width:172.8px;height:72.7px;">
                 Степень отличительности бренда
             </div>
 
@@ -215,7 +260,7 @@
             </div>
 
             <div class="el text text-insights-title" style="left:346.5px;top:320px;width:591.6px;height:40px;">
-                Окно для текстовых выводов
+                Выводы
             </div>
 
             <div class="el text text-op" style="left:292.8px;top:98.5px;width:41.7px;height:72.7px;">=</div>
