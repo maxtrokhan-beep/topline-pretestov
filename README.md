@@ -65,6 +65,7 @@ Render автоматически подставит переменную окр
 
 - `app.py` — Streamlit UI и скачивание HTML;
 - `report_generator.py` — чтение Excel, нормализация данных, выбор цветов, рендер Jinja2;
-- `templates/report_template.html` — HTML/CSS шаблон отчета;
+- `templates/report_template.html` — HTML/CSS шаблон отчета (структура блоков как в PPTX);
+- `templates/assets/report_bg.png` — декоративный фон (полосы и логотип), экспорт из `topline pre test_ background.pdf`;
 - `requirements.txt` — зависимости;
 - `README.md` — инструкция по запуску и деплою.

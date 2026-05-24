@@ -115,12 +115,14 @@ def generate_report_html(file_bytes: bytes, user_insights: str, template_dir: Pa
     """
     ws = _load_sheet(file_bytes)
 
+    # Декоративный фон (полосы + логотип), экспортированный из background.pdf.
     bg_path = template_dir / "assets" / "report_bg.png"
     try:
         background_base64 = base64.b64encode(bg_path.read_bytes()).decode("ascii")
     except OSError as exc:
         raise ReportGenerationError(
-            "Не найден фоновый макет templates/assets/report_bg.png."
+            "Не найден фон templates/assets/report_bg.png. "
+            "Положите PNG, экспортированный из topline pre test_ background.pdf."
         ) from exc
 
     context = {
