@@ -175,8 +175,8 @@
             font-size: 12px;
             font-weight: 400;
             color: #5a3828;
-            align-items: center;
-            line-height: 1.2;
+            align-items: flex-start;
+            line-height: 1.05;
         }
 
         .text-op {
@@ -212,9 +212,10 @@
         }
 
         .insights-body {
-            font-size: 13px;
-            line-height: 1.3;
-            color: #1f1f1f;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.05;
+            color: #5a3828;
             white-space: pre-wrap;
             align-items: flex-start;
             padding: 6px 10px;
@@ -302,11 +303,11 @@
             <div class="el text text-op" style="left:722.5px;top:206.4px;width:41.7px;height:72.7px;">+</div>
 
             <!-- Сообщения (A24–A28) — координаты soobshenie1..5 -->
-            <div class="el text text-msg" style="left:17.3px;top:378.3px;width:186.8px;height:29.1px;">{{ msg1 }}</div>
-            <div class="el text text-msg" style="left:17.3px;top:406.6px;width:186.8px;height:29.1px;">{{ msg2 }}</div>
-            <div class="el text text-msg" style="left:17.3px;top:434.4px;width:186.8px;height:29.1px;">{{ msg3 }}</div>
-            <div class="el text text-msg" style="left:17.3px;top:461.3px;width:186.8px;height:29.1px;">{{ msg4 }}</div>
-            <div class="el text text-msg" style="left:17.3px;top:489.9px;width:186.8px;height:29.1px;">{{ msg5 }}</div>
+            <div class="el text text-msg" style="left:20.3px;top:378.3px;width:186.8px;height:29.1px;">{{ msg1 }}</div>
+            <div class="el text text-msg" style="left:20.3px;top:406.6px;width:186.8px;height:29.1px;">{{ msg2 }}</div>
+            <div class="el text text-msg" style="left:20.3px;top:434.4px;width:186.8px;height:29.1px;">{{ msg3 }}</div>
+            <div class="el text text-msg" style="left:20.3px;top:461.3px;width:186.8px;height:29.1px;">{{ msg4 }}</div>
+            <div class="el text text-msg" style="left:20.3px;top:489.9px;width:186.8px;height:29.1px;">{{ msg5 }}</div>
 
             <!-- Числовые значения из Excel (координаты из исходного макета) -->
             <div class="el value value-heading" style="left:24.4px;top:152.7px;width:255.5px;height:31.5px;color:{{ v1.color }};">{{ v1.value }}</div>
@@ -314,8 +315,8 @@
             <div class="el value" style="left:371.3px;top:93.7px;width:255.5px;height:31.5px;color:{{ v3.color }};">{{ v3.value }}</div>
             <div class="el value" style="left:683.8px;top:143.6px;width:255.5px;height:31.5px;color:{{ v4.color }};">{{ v4.value }}</div>
 
-            <div class="el value value-metric" style="left:531.6px;top:168.8px;width:100px;height:26.7px;color:{{ v5.color }};">{{ v5.value }}</div>
-            <div class="el value value-metric" style="left:512.6px;top:168.8px;width:100px;height:26.7px;color:{{ v6.color }};">{{ v6.value }}</div>
+            <div class="el value value-metric" style="left:531.6px;top:127.6px;width:100px;height:26.7px;color:{{ v5.color }};">{{ v5.value }}</div>
+            <div class="el value value-metric" style="left:512.6px;top:148.2px;width:100px;height:26.7px;color:{{ v6.color }};">{{ v6.value }}</div>
             <div class="el value value-metric" style="left:569.5px;top:168.8px;width:100px;height:26.7px;color:{{ v7.color }};">{{ v7.value }}</div>
 
             <div class="el value" style="left:362.7px;top:264px;width:162.5px;height:31.5px;color:{{ v8.color }};">{{ v8.value }}</div>
@@ -329,7 +330,7 @@
             <div class="el value value-msg" style="left:213.2px;top:488.1px;width:95.8px;height:29.1px;color:{{ v16.color }};">{{ v16.value }}</div>
 
             <!-- Текстовые выводы пользователя -->
-            <div class="el text insights-body" style="left:350px;top:359px;width:580px;height:168px;">{{ insights }}</div>
+            <div class="el text insights-body" style="left:350px;top:357px;width:580px;height:170px;">{{ insights }}</div>
         </div>
     </div>
 </body>
