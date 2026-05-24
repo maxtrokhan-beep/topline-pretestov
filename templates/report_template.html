@@ -116,6 +116,12 @@
             line-height: 1.2;
         }
 
+        .text-subtitle-wrap.brand-power-sub {
+            max-width: 210px;
+            margin: 0 auto;
+            line-height: 1.15;
+        }
+
         .text-label-center {
             font-size: 16px;
             font-weight: 700;
@@ -190,6 +196,14 @@
             line-height: 1;
         }
 
+        .value-heading {
+            font-size: 24px;
+        }
+
+        .value-metric {
+            font-size: 19px;
+        }
+
         .value-msg {
             justify-content: flex-end;
             padding-right: 4px;
@@ -239,9 +253,9 @@
                 <span>(Краткосрочный эффект на бренд и продажи)</span>
             </div>
 
-            <div class="el text text-stsl-brand" style="left:27.8px;top:195.6px;width:253.5px;height:65.4px;">
+            <div class="el text text-stsl-brand" style="left:27.8px;top:193.6px;width:253.5px;height:65.4px;">
                 <span style="font-size:24px;font-weight:700;color:#5a2314;">Brand Power</span>
-                <span class="text-subtitle-wrap">(Долгосрочный эффект на бренд и продажи)</span>
+                <span class="text-subtitle-wrap brand-power-sub">(Долгосрочный эффект на бренд<br>и продажи)</span>
             </div>
 
             <div class="el text text-label-center" style="left:371.7px;top:68.2px;width:254.9px;height:29.1px;">
@@ -288,21 +302,21 @@
             <div class="el text text-op" style="left:722.5px;top:206.4px;width:41.7px;height:72.7px;">+</div>
 
             <!-- Сообщения (A24–A28) — координаты soobshenie1..5 -->
-            <div class="el text text-msg" style="left:-2.7px;top:378.3px;width:186.8px;height:29.1px;">{{ msg1 }}</div>
-            <div class="el text text-msg" style="left:-2.7px;top:406.6px;width:186.8px;height:29.1px;">{{ msg2 }}</div>
-            <div class="el text text-msg" style="left:-2.7px;top:434.4px;width:186.8px;height:29.1px;">{{ msg3 }}</div>
-            <div class="el text text-msg" style="left:-2.7px;top:461.3px;width:186.8px;height:29.1px;">{{ msg4 }}</div>
-            <div class="el text text-msg" style="left:-2.7px;top:489.9px;width:186.8px;height:29.1px;">{{ msg5 }}</div>
+            <div class="el text text-msg" style="left:12.3px;top:378.3px;width:186.8px;height:29.1px;">{{ msg1 }}</div>
+            <div class="el text text-msg" style="left:12.3px;top:406.6px;width:186.8px;height:29.1px;">{{ msg2 }}</div>
+            <div class="el text text-msg" style="left:12.3px;top:434.4px;width:186.8px;height:29.1px;">{{ msg3 }}</div>
+            <div class="el text text-msg" style="left:12.3px;top:461.3px;width:186.8px;height:29.1px;">{{ msg4 }}</div>
+            <div class="el text text-msg" style="left:12.3px;top:489.9px;width:186.8px;height:29.1px;">{{ msg5 }}</div>
 
             <!-- Числовые значения из Excel (координаты из исходного макета) -->
-            <div class="el value" style="left:24.4px;top:152.7px;width:255.5px;height:31.5px;color:{{ v1.color }};">{{ v1.value }}</div>
-            <div class="el value" style="left:24.4px;top:264.6px;width:255.5px;height:31.5px;color:{{ v2.color }};">{{ v2.value }}</div>
+            <div class="el value value-heading" style="left:24.4px;top:152.7px;width:255.5px;height:31.5px;color:{{ v1.color }};">{{ v1.value }}</div>
+            <div class="el value value-heading" style="left:24.4px;top:264.6px;width:255.5px;height:31.5px;color:{{ v2.color }};">{{ v2.value }}</div>
             <div class="el value" style="left:371.3px;top:93.7px;width:255.5px;height:31.5px;color:{{ v3.color }};">{{ v3.value }}</div>
             <div class="el value" style="left:683.8px;top:143.6px;width:255.5px;height:31.5px;color:{{ v4.color }};">{{ v4.value }}</div>
 
-            <div class="el value" style="left:531.6px;top:127.6px;width:100px;height:26.7px;color:{{ v5.color }};">{{ v5.value }}</div>
-            <div class="el value" style="left:512.6px;top:148.2px;width:100px;height:26.7px;color:{{ v6.color }};">{{ v6.value }}</div>
-            <div class="el value" style="left:569.5px;top:168.8px;width:100px;height:26.7px;color:{{ v7.color }};">{{ v7.value }}</div>
+            <div class="el value value-metric" style="left:531.6px;top:127.6px;width:100px;height:26.7px;color:{{ v5.color }};">{{ v5.value }}</div>
+            <div class="el value value-metric" style="left:512.6px;top:148.2px;width:100px;height:26.7px;color:{{ v6.color }};">{{ v6.value }}</div>
+            <div class="el value value-metric" style="left:569.5px;top:168.8px;width:100px;height:26.7px;color:{{ v7.color }};">{{ v7.value }}</div>
 
             <div class="el value" style="left:362.7px;top:264px;width:162.5px;height:31.5px;color:{{ v8.color }};">{{ v8.value }}</div>
             <div class="el value" style="left:561.3px;top:264.8px;width:162.5px;height:31.5px;color:{{ v9.color }};">{{ v9.value }}</div>
