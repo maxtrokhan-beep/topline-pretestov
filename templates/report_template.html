@@ -92,6 +92,30 @@
             overflow: visible;
         }
 
+        .text-metric-line {
+            white-space: nowrap;
+            overflow: visible;
+        }
+
+        .text-metric-line .metric-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2b1a12;
+        }
+
+        .text-metric-line .metric-sub {
+            font-size: 12px;
+            font-weight: 400;
+            color: #5a3828;
+        }
+
+        .text-subtitle-wrap {
+            white-space: normal;
+            text-align: center;
+            display: block;
+            line-height: 1.2;
+        }
+
         .text-label-center {
             font-size: 16px;
             font-weight: 700;
@@ -142,17 +166,11 @@
         }
 
         .text-msg {
-            font-size: 14px;
-            color: #1a1a1a;
+            font-size: 12px;
+            font-weight: 400;
+            color: #5a3828;
             align-items: center;
-        }
-
-        .text-insights-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #5a2314;
-            justify-content: center;
-            text-align: center;
+            line-height: 1.2;
         }
 
         .text-op {
@@ -221,12 +239,12 @@
                 <span>(Краткосрочный эффект на бренд и продажи)</span>
             </div>
 
-            <div class="el text text-stsl-brand" style="left:27.8px;top:200.6px;width:253.5px;height:65.4px;">
+            <div class="el text text-stsl-brand" style="left:27.8px;top:195.6px;width:253.5px;height:65.4px;">
                 <span style="font-size:24px;font-weight:700;color:#5a2314;">Brand Power</span>
-                <span>(Долгосрочный эффект на бренд и продажи)</span>
+                <span class="text-subtitle-wrap">(Долгосрочный эффект на бренд и продажи)</span>
             </div>
 
-            <div class="el text text-heading" style="left:371.7px;top:68.2px;width:254.9px;height:29.1px;">
+            <div class="el text text-label-center" style="left:371.7px;top:68.2px;width:254.9px;height:29.1px;">
                 Запоминаемость с брендом
             </div>
 
@@ -235,14 +253,14 @@
                 <span class="persuasion-sub">(Повышает вероятность посещения или заказа)</span>
             </div>
 
-            <div class="el text text-label text-label-nowrap" style="left:354.8px;top:127.6px;width:172.8px;height:26.7px;">
-                Involvement (Вовлекает)
+            <div class="el text text-metric-line" style="left:354.8px;top:127.6px;width:172.8px;height:26.7px;">
+                <span class="metric-title">Involvement </span><span class="metric-sub">(Вовлекает)</span>
             </div>
-            <div class="el text text-label text-label-nowrap" style="left:354.8px;top:148.2px;width:153.8px;height:26.7px;">
-                Enjoyment (Нравится)
+            <div class="el text text-metric-line" style="left:354.8px;top:148.2px;width:153.8px;height:26.7px;">
+                <span class="metric-title">Enjoyment </span><span class="metric-sub">(Нравится)</span>
             </div>
-            <div class="el text text-label text-label-nowrap" style="left:354.8px;top:168.8px;width:210.7px;height:26.7px;">
-                Branding (Бренд запоминается)
+            <div class="el text text-metric-line" style="left:354.8px;top:168.8px;width:210.7px;height:26.7px;">
+                <span class="metric-title">Branding </span><span class="metric-sub">(Бренд запоминается)</span>
             </div>
 
             <div class="el text text-label-center" style="left:344.9px;top:207.8px;width:198px;height:50.9px;">
@@ -259,7 +277,7 @@
                 Способность донести сообщения
             </div>
 
-            <div class="el text text-insights-title" style="left:346.5px;top:320px;width:591.6px;height:40px;">
+            <div class="el text text-heading" style="left:346.5px;top:320px;width:591.6px;height:40px;">
                 Выводы
             </div>
 

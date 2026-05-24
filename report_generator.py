@@ -63,11 +63,11 @@ def _color_for_value(value: int | None) -> str:
     if value is None:
         return NEUTRAL_COLOR
     if 0 <= value <= 30:
-        return "rgb(0, 182, 0)"
+        return "rgb(225, 0, 0)"
     if 31 <= value <= 69:
         return "rgb(255, 192, 0)"
     if 70 <= value <= 100:
-        return "rgb(225, 0, 0)"
+        return "rgb(0, 182, 0)"
     return NEUTRAL_COLOR
 
 
